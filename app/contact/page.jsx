@@ -1,5 +1,4 @@
 import ContactContent from "@/src/sections/Contact/ContactContent";
-import FAQPage from "@/src/sections/FAQ/FAQPage";
 
 export const metadata = {
   title: "Caliper Painting Manchester Contact | Expert Bodyshop & Auto Body Shop",

@@ -1,12 +1,12 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
-import { usePathname } from 'next/navigation';
-import Link from 'next/link';
-import { Menu, X, Phone, MapPin } from 'lucide-react';
-import { MdEmail, MdCall } from 'react-icons/md';
-import { FaWhatsapp } from 'react-icons/fa';
-import Image from 'next/image';
+import React, { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
+import { Menu, X } from "lucide-react";
+import { MdEmail, MdCall } from "react-icons/md";
+import { FaWhatsapp } from "react-icons/fa";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,10 +14,10 @@ const Navbar = () => {
   const pathname = usePathname();
 
   const navLinks = [
-    { name: 'Home', href: '/' },
-    { name: 'Caliper Painting', href: '/caliper-painting' },
-    { name: 'Gallery', href: '/gallery' },
-    { name: 'FAQ', href: '/faq' },
+    { name: "Home", href: "/" },
+    { name: "Caliper Painting", href: "/caliper-painting" },
+    { name: "Gallery", href: "/gallery" },
+    { name: "FAQ", href: "/faq" },
   ];
 
   // Close navbar when route changes
@@ -39,53 +39,66 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${
-      scrolled
-        ? "py-2 bg-slate-900/95 backdrop-blur-md shadow-xl"
-        : "py-3 bg-slate-900/90 backdrop-blur-sm shadow-lg"
-    }`}>
+    <nav
+      className={`fixed w-full z-50 transition-all duration-300 ${
+        scrolled
+          ? "py-2"
+          : "py-3"
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Left: Logo + Contact Info */}
           <div className="flex items-center gap-6">
             {/* Logo/Brand */}
-            <Link href="/" className="flex-shrink-0">
-              <Image src={"/assets/logo.png"} width={100} height={100} alt='brake-caliper-manchester-logo'/>
+            <Link href="/" className={`pl-4 flex-shrink-0 ${scrolled ? "rotate-90 transition-all duration-300" : ""}`}>
+              <Image
+                src={"/assets/logo.png"}
+                width={100}
+                height={100}
+                alt="brake-caliper-manchester-logo"
+              />
             </Link>
 
             {/* Contact Buttons - Desktop */}
             <div className="pl-12 hidden lg:flex lg:flex-col items-center gap-3">
               <a
- href="tel:+441612345678"
- className="flex items-center justify-start gap-2 w-32 h-10 px-3 bg-red-600 hover:bg-red-700 text-white rounded-lg transition-all duration-200 shadow-md hover:shadow-lg group"
->
- <div className="flex items-center justify-center w-5 h-5 flex-shrink-0">
-   <MdCall className="text-white text-base group-hover:scale-110 transition-transform" />
- </div>
- <span className="text-sm font-medium whitespace-nowrap">Call Now</span>
-</a>
+                href="tel:+441612345678"
+                className="flex items-center justify-start gap-2 w-32 h-10 px-3 bg-red-600 hover:bg-red-700 text-white rounded-lg transition-all duration-200 shadow-md hover:shadow-lg group"
+              >
+                <div className="flex items-center justify-center w-5 h-5 flex-shrink-0">
+                  <MdCall className="text-white text-base group-hover:scale-110 transition-transform" />
+                </div>
+                <span className="text-sm font-medium whitespace-nowrap">
+                  Call Now
+                </span>
+              </a>
 
-<a
- href="https://api.whatsapp.com/send?phone=441612345678&text=Hi, I'm interested in caliper painting services"
- target="_blank"
- rel="noopener noreferrer"
- className="flex items-center justify-start gap-2 w-32 h-10 px-3 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-all duration-200 shadow-md hover:shadow-lg group"
->
- <div className="flex items-center justify-center w-5 h-5 flex-shrink-0">
-   <FaWhatsapp className="text-white text-base group-hover:scale-110 transition-transform" />
- </div>
- <span className="text-sm font-medium whitespace-nowrap">WhatsApp</span>
-</a>
+              <a
+                href="https://api.whatsapp.com/send?phone=441612345678&text=Hi, I'm interested in caliper painting services"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-start gap-2 w-32 h-10 px-3 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-all duration-200 shadow-md hover:shadow-lg group"
+              >
+                <div className="flex items-center justify-center w-5 h-5 flex-shrink-0">
+                  <FaWhatsapp className="text-white text-base group-hover:scale-110 transition-transform" />
+                </div>
+                <span className="text-sm font-medium whitespace-nowrap">
+                  WhatsApp
+                </span>
+              </a>
 
-<a
- href="mailto:info@caliperrefurbishmentmanchester.co.uk"
- className="flex items-center justify-start gap-2 w-32 h-10 px-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-all duration-200 shadow-md hover:shadow-lg group"
->
- <div className="flex items-center justify-center w-5 h-5 flex-shrink-0">
-   <MdEmail className="text-white text-base group-hover:scale-110 transition-transform" />
- </div>
- <span className="text-sm font-medium whitespace-nowrap">Email</span>
-</a>
+              <a
+                href="mailto:info@caliperrefurbishmentmanchester.co.uk"
+                className="flex items-center justify-start gap-2 w-32 h-10 px-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-all duration-200 shadow-md hover:shadow-lg group"
+              >
+                <div className="flex items-center justify-center w-5 h-5 flex-shrink-0">
+                  <MdEmail className="text-white text-base group-hover:scale-110 transition-transform" />
+                </div>
+                <span className="text-sm font-medium whitespace-nowrap">
+                  Email
+                </span>
+              </a>
             </div>
           </div>
 
@@ -99,8 +112,8 @@ const Navbar = () => {
                   href={link.href}
                   className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
                     pathname === link.href
-                      ? 'bg-red-600 text-white shadow-md'
-                      : 'text-gray-300 hover:bg-slate-700 hover:text-white'
+                      ? "bg-red-600 text-white shadow-md"
+                      : "text-gray-300 hover:bg-slate-700 hover:text-white"
                   }`}
                 >
                   {link.name}
@@ -141,7 +154,7 @@ const Navbar = () => {
                 <MdCall className="text-xl" />
                 <span className="text-xs font-medium">Call</span>
               </a>
-              
+
               <a
                 href="https://api.whatsapp.com/send?phone=441612345678&text=Hi, I'm interested in caliper painting services"
                 target="_blank"
@@ -152,7 +165,7 @@ const Navbar = () => {
                 <FaWhatsapp className="text-xl" />
                 <span className="text-xs font-medium">WhatsApp</span>
               </a>
-              
+
               <a
                 href="mailto:info@caliperrefurbishmentmanchester.co.uk"
                 className="flex flex-col items-center gap-1 px-3 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-all duration-200 text-center"
@@ -171,15 +184,15 @@ const Navbar = () => {
                   href={link.href}
                   className={`block px-4 py-3 rounded-lg font-medium transition-all duration-200 ${
                     pathname === link.href
-                      ? 'bg-red-600 text-white'
-                      : 'text-gray-300 hover:bg-slate-700 hover:text-white'
+                      ? "bg-red-600 text-white"
+                      : "text-gray-300 hover:bg-slate-700 hover:text-white"
                   }`}
                   onClick={() => setIsOpen(false)}
                 >
                   {link.name}
                 </Link>
               ))}
-              
+
               {/* Mobile CTA */}
               <Link
                 href="/contact"

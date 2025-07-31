@@ -31,7 +31,7 @@ const Hero = () => {
   }, [backgroundImages.length]);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 sm:pt-48">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-28 sm:pt-48">
       {/* Cycling Background Images */}
       {backgroundImages.map((image, index) => (
         <div

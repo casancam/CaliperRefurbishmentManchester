@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { 
   Search,
@@ -15,12 +15,9 @@ import {
   MessageCircle,
   Phone,
   ArrowRight,
-  CheckCircle,
-  AlertCircle,
   Info,
   Star,
   Camera,
-  Filter,
   Tag,
   Book
 } from 'lucide-react';
