@@ -31,7 +31,7 @@ const Hero = () => {
   }, [backgroundImages.length]);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-28 sm:pt-48">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-36 sm:pt-48">
       {/* Cycling Background Images */}
       {backgroundImages.map((image, index) => (
         <div
@@ -60,7 +60,7 @@ const Hero = () => {
           {/* Main Headline - H1 */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight">
             Professional
-            <span className="block text-red-500 bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
+            <span className="block text-red-500 bg-gradient-to-r from-red-400 to-red-600 bg-clip-text">
               Caliper Painting
             </span>
             <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl mt-1 sm:mt-2">
