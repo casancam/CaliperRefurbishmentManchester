@@ -53,10 +53,10 @@ const Footer = () => {
                   <div>
                     <h4 className="text-white font-medium">Call Us</h4>
                     <a
-                      href="tel:+441612345678"
+                      href="tel:+441615492993"
                       className="text-gray-300 hover:text-white transition-colors mt-1 block"
                     >
-                      0161 234 5678
+                      0161 549 2993
                     </a>
                   </div>
                 </div>
@@ -68,10 +68,10 @@ const Footer = () => {
                   <div>
                     <h4 className="text-white font-medium">Email Us</h4>
                     <a
-                      href="mailto:info@caliperrefurbishmentmanchester.co.uk"
+                      href="mailto:info@caliperrefurbmanchester.co.uk"
                       className="text-gray-300 hover:text-white transition-colors mt-1 block break-all"
                     >
-                      info@caliperrefurbishmentmanchester.co.uk
+                      info@caliperrefurbmanchester.co.uk
                     </a>
                   </div>
                 </div>
@@ -147,7 +147,7 @@ const Footer = () => {
                     <FaInstagram className="text-white" />
                   </a>
                   <a
-                    href="https://api.whatsapp.com/send?phone=441612345678&text=Hi, I'm interested in caliper painting services"
+                    href="https://api.whatsapp.com/send?phone=441615492993&text=Hi, I'm interested in caliper painting services"
                     className="w-10 h-10 rounded-full bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center hover:shadow-lg hover:shadow-green-500/20 transition-all"
                     aria-label="WhatsApp"
                   >

@@ -139,15 +139,15 @@ const ContactContent = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
-              href="tel:+441612345678"
+              href="tel:+441615492993"
               className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center gap-2"
             >
               <Phone className="w-5 h-5" />
-              Call Now: 0161 234 5678
+              Call Now: 0161 549 2993
             </a>
             
             <a
-              href="https://api.whatsapp.com/send?phone=441612345678&text=Hi, I'm interested in caliper painting services"
+              href="https://api.whatsapp.com/send?phone=441615492993&text=Hi, I'm interested in caliper painting services"
               target="_blank"
               rel="noopener noreferrer"
               className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 flex items-center gap-2"
@@ -370,10 +370,10 @@ const ContactContent = () => {
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">Call Us</h4>
                       <a
-                        href="tel:+441612345678"
+                        href="tel:+441615492993"
                         className="text-gray-600 hover:text-red-600 transition-colors"
                       >
-                        0161 234 5678
+                        0161 549 2993
                       </a>
                       <p className="text-sm text-gray-500 mt-1">
                         Speak directly with our experts
@@ -388,10 +388,10 @@ const ContactContent = () => {
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">Email Us</h4>
                       <a
-                        href="mailto:info@caliperrefurbishmentmanchester.co.uk"
+                        href="mailto:info@caliperrefurbmanchester.co.uk"
                         className="text-gray-600 hover:text-red-600 transition-colors text-sm break-all"
                       >
-                        info@caliperrefurbishmentmanchester.co.uk
+                        info@caliperrefurbmanchester.co.uk
                       </a>
                       <p className="text-sm text-gray-500 mt-1">
                         24-hour response guarantee
@@ -423,12 +423,12 @@ const ContactContent = () => {
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">WhatsApp</h4>
                       <a
-                        href="https://api.whatsapp.com/send?phone=441612345678&text=Hi, I'm interested in caliper painting services"
+                        href="https://api.whatsapp.com/send?phone=441615492993&text=Hi, I'm interested in caliper painting services"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-600 hover:text-red-600 transition-colors"
                       >
-                        +44 161 234 5678
+                        0161 549 2993
                       </a>
                       <p className="text-sm text-gray-500 mt-1">
                         Instant messaging support

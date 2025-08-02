@@ -2,11 +2,9 @@ import Hero from "@/src/sections/Home/Hero";
 import LandingContent from "@/src/sections/Home/LandingContent";
 
 export const metadata = {
-  title: "Caliper Refurbishment Manchester | Expert Bodyshop & Auto Body Shop",
-  description:
-    "Bodyshop Manchester is your trusted car body shop in Manchester, specialising in expert car body repair. Reliable auto body shop services you can count on.",
-  keywords:
-    "Bodyshop Manchester, car body repair Manchester, car body shop Manchester, Auto body shop Manchester, body restoration, car body work, vehicle repair services, bodyshop near me",
+  title: "Professional Brake Caliper Painting & Refurbishment Manchester | Expert Automotive Services",
+  description: "Manchester's premier brake caliper painting and refurbishment specialists. Ferrari red, custom colors, high-temperature paint, professional installation. 3-year warranty. Call 0161 549 2993.",
+  keywords: "brake caliper painting Manchester, caliper refurbishment Manchester, automotive services Manchester, Ferrari red calipers, high temperature brake paint, professional car services, brake caliper specialists, custom automotive painting, performance brake services, Manchester car modification",
 };
 
 export default function HomePage() {

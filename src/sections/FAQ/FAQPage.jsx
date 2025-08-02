@@ -147,7 +147,7 @@ const FAQPage = () => {
       id: 14,
       category: 'booking',
       question: "How do I book an appointment?",
-      answer: "Booking is easy! Contact us via phone (0161 234 5678), WhatsApp, or our online contact form. We'll discuss your requirements, provide a quote, and schedule your appointment. We typically book 1-2 weeks in advance, but rush appointments are available. We'll send confirmation details and preparation instructions.",
+      answer: "Booking is easy! Contact us via phone (0161 549 2993), WhatsApp, or our online contact form. We'll discuss your requirements, provide a quote, and schedule your appointment. We typically book 1-2 weeks in advance, but rush appointments are available. We'll send confirmation details and preparation instructions.",
       popular: true,
       tags: ['booking', 'appointment', 'schedule', 'contact']
     },
@@ -493,10 +493,10 @@ const FAQPage = () => {
                 Speak with our experts for immediate answers to your questions.
               </p>
               <a
-                href="tel:+441612345678"
+                href="tel:+441615492993"
                 className="inline-flex items-center text-red-600 hover:text-red-700 font-medium"
               >
-                0161 234 5678
+                0161 549 2993
                 <ArrowRight className="w-4 h-4 ml-1" />
               </a>
             </div>
@@ -576,8 +576,8 @@ const FAQPage = () => {
               Gallery
             </Link>
             <span>•</span>
-            <a href="tel:+441612345678" className="hover:text-white transition-colors">
-              0161 234 5678
+            <a href="tel:+4401615492993" className="hover:text-white transition-colors">
+            0161 549 2993
             </a>
           </div>
         </div>

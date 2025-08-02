@@ -400,8 +400,8 @@ const GalleryComponent = () => {
               FAQs
             </Link>
             <span>•</span>
-            <a href="tel:+441612345678" className="hover:text-white transition-colors">
-              0161 234 5678
+            <a href="tel:+441615492993" className="hover:text-white transition-colors">
+            0161 549 2993
             </a>
           </div>
         </div>

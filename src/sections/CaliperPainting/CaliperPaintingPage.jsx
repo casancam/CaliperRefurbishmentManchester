@@ -521,11 +521,11 @@ const CaliperPaintingPage = () => {
             </Link>
             
             <a
-              href="tel:+441612345678"
+              href="tel:+441615492993"
               className="border-2 border-white text-white hover:bg-white hover:text-red-600 px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-300 flex items-center"
             >
               <Phone className="w-5 h-5 mr-2" />
-              Call Now: 0161 234 5678
+              Call Now: 0161 549 2993
             </a>
           </div>
 

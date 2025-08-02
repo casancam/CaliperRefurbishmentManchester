@@ -63,7 +63,7 @@ const Navbar = () => {
             {/* Contact Buttons - Desktop */}
             <div className="pl-12 hidden lg:flex lg:flex-col items-center gap-3">
               <a
-                href="tel:+441612345678"
+                href="tel:+441615492993"
                 className="flex items-center justify-start gap-2 w-32 h-10 px-3 bg-red-600 hover:bg-red-700 text-white rounded-lg transition-all duration-200 shadow-md hover:shadow-lg group"
               >
                 <div className="flex items-center justify-center w-5 h-5 flex-shrink-0">
@@ -75,7 +75,7 @@ const Navbar = () => {
               </a>
 
               <a
-                href="https://api.whatsapp.com/send?phone=441612345678&text=Hi, I'm interested in caliper painting services"
+                href="https://api.whatsapp.com/send?phone=441615492993&text=Hi, I'm interested in caliper painting services"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-start gap-2 w-32 h-10 px-3 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-all duration-200 shadow-md hover:shadow-lg group"
@@ -89,7 +89,7 @@ const Navbar = () => {
               </a>
 
               <a
-                href="mailto:info@caliperrefurbishmentmanchester.co.uk"
+                href="mailto:info@caliperrefurbmanchester.co.uk"
                 className="flex items-center justify-start gap-2 w-32 h-10 px-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-all duration-200 shadow-md hover:shadow-lg group"
               >
                 <div className="flex items-center justify-center w-5 h-5 flex-shrink-0">
@@ -147,7 +147,7 @@ const Navbar = () => {
             {/* Mobile Contact Buttons */}
             <div className="grid grid-cols-3 gap-2 p-4 border-b border-slate-700">
               <a
-                href="tel:+441612345678"
+                href="tel:+441615492993"
                 className="flex flex-col items-center gap-1 px-3 py-3 bg-red-600 hover:bg-red-700 text-white rounded-lg transition-all duration-200 text-center"
                 onClick={() => setIsOpen(false)}
               >
@@ -156,7 +156,7 @@ const Navbar = () => {
               </a>
 
               <a
-                href="https://api.whatsapp.com/send?phone=441612345678&text=Hi, I'm interested in caliper painting services"
+                href="https://api.whatsapp.com/send?phone=441615492993&text=Hi, I'm interested in caliper painting services"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex flex-col items-center gap-1 px-3 py-3 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-all duration-200 text-center"
@@ -167,7 +167,7 @@ const Navbar = () => {
               </a>
 
               <a
-                href="mailto:info@caliperrefurbishmentmanchester.co.uk"
+                href="mailto:info@caliperrefurbmanchester.co.uk"
                 className="flex flex-col items-center gap-1 px-3 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-all duration-200 text-center"
                 onClick={() => setIsOpen(false)}
               >
