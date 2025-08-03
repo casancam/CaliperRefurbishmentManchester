@@ -12,7 +12,8 @@ import {
   Shield,
   Wrench,
   Droplets,
-  Thermometer
+  Thermometer,
+  Eye
 } from 'lucide-react';
 
 const LandingContent = () => {
@@ -26,8 +27,8 @@ const LandingContent = () => {
               Professional Caliper Services in Manchester
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              From expert painting to complete installations, we provide comprehensive brake caliper services 
-              with premium materials and professional craftsmanship.
+              Expert caliper painting while mounted on your vehicle, using premium materials 
+              and professional craftsmanship for a perfect finish.
             </p>
           </div>
 
@@ -39,7 +40,7 @@ const LandingContent = () => {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Our Services</h3>
               <p className="text-gray-600 mb-4">
-                Discover our complete range of brake caliper services, from painting to installation and maintenance.
+                Discover our complete range of brake caliper services, from painting to maintenance.
               </p>
               <Link 
                 href="/"
@@ -195,7 +196,7 @@ const LandingContent = () => {
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Every caliper painting project follows our proven 6-step process to ensure 
-              exceptional results and long-lasting durability.
+              exceptional results and long-lasting durability - all while your calipers remain mounted.
             </p>
           </div>
 
@@ -207,18 +208,18 @@ const LandingContent = () => {
                   <div className="w-12 h-12 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
                     1
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900">Initial Assessment & Removal</h3>
+                  <h3 className="text-2xl font-bold text-gray-900">Initial Assessment & Preparation</h3>
                 </div>
                 <p className="text-gray-600 text-lg">
-                  We carefully assess your calipers' condition and safely remove them from your vehicle. 
-                  Our technicians inspect for any damage or wear that needs addressing before painting.
+                  We carefully assess your calipers' condition while mounted on your vehicle. 
+                  Our technicians inspect for any damage or wear and prepare the work area for painting.
                 </p>
               </div>
               <div className="lg:w-1/2">
                 <div className="bg-white p-6 rounded-xl shadow-lg">
                   <Clock className="w-8 h-8 text-red-600 mb-3" />
                   <h4 className="font-semibold text-gray-900 mb-2">Time Required: 30-45 minutes</h4>
-                  <p className="text-gray-600">Professional removal and initial inspection</p>
+                  <p className="text-gray-600">Professional assessment and work area preparation</p>
                 </div>
               </div>
             </div>
@@ -303,7 +304,7 @@ const LandingContent = () => {
                 </div>
                 <p className="text-gray-600 text-lg">
                   Calipers are properly cured to achieve maximum hardness and temperature resistance. 
-                  We perform thorough quality checks before proceeding to installation.
+                  We perform thorough quality checks before proceeding to final inspection.
                 </p>
               </div>
               <div className="lg:w-1/2">
@@ -322,18 +323,18 @@ const LandingContent = () => {
                   <div className="w-12 h-12 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
                     6
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900">Professional Installation</h3>
+                  <h3 className="text-2xl font-bold text-gray-900">Final Inspection & Cleanup</h3>
                 </div>
                 <p className="text-gray-600 text-lg">
-                  Your newly painted calipers are carefully reinstalled with proper torque specifications. 
-                  We perform final checks to ensure everything is perfect before delivery.
+                  We perform a thorough final inspection of the painted calipers and clean up the work area. 
+                  Final quality checks ensure everything meets our high standards before completion.
                 </p>
               </div>
               <div className="lg:w-1/2">
                 <div className="bg-white p-6 rounded-xl shadow-lg">
-                  <Wrench className="w-8 h-8 text-red-600 mb-3" />
-                  <h4 className="font-semibold text-gray-900 mb-2">Expert Installation</h4>
-                  <p className="text-gray-600">Proper torque specs and final quality assurance</p>
+                  <Eye className="w-8 h-8 text-red-600 mb-3" />
+                  <h4 className="font-semibold text-gray-900 mb-2">Quality Assurance</h4>
+                  <p className="text-gray-600">Final inspection and professional cleanup</p>
                 </div>
               </div>
             </div>

@@ -33,7 +33,7 @@ const FAQPage = () => {
       id: 1,
       category: 'pricing',
       question: "How much does caliper painting cost?",
-      answer: "Our caliper painting services start from £299 for our Standard Package. We offer three tiers: Standard (£299), Premium (£449), and Performance (£699). Each package includes complete removal, professional painting, and reinstallation. The price varies based on your vehicle type, chosen color, and any custom requirements.",
+      answer: "Our caliper painting services start from £299 for our Standard Package. We offer three tiers: Standard (£299), Premium (£449), and Performance (£699). Each package includes professional painting while your calipers remain mounted on your vehicle. The price varies based on your vehicle type, chosen color, and any custom requirements.",
       popular: true,
       tags: ['cost', 'price', 'packages']
     },
@@ -41,7 +41,7 @@ const FAQPage = () => {
       id: 2,
       category: 'pricing',
       question: "What's included in each pricing package?",
-      answer: "Standard Package (£299): Complete caliper removal, professional cleaning, high-temp primer and paint, standard colors, professional reinstallation, and 1-year warranty. Premium Package (£449): All Standard features plus custom color matching, premium paint system, detailed finishing, brake inspection, and 3-year warranty. Performance Package (£699): All Premium features plus racing-grade paint, multiple colors, logo application, complete brake service, and lifetime warranty.",
+      answer: "Standard Package (£299): Professional cleaning, surface preparation, high-temp primer and paint, standard colors, while-mounted service, and 1-year warranty. Premium Package (£449): All Standard features plus custom color matching, premium paint system, detailed finishing, brake inspection, and 3-year warranty. Performance Package (£699): All Premium features plus racing-grade paint, multiple colors, logo application, complete brake service inspection, and lifetime warranty.",
       popular: false,
       tags: ['packages', 'warranty', 'included']
     },
@@ -49,7 +49,7 @@ const FAQPage = () => {
       id: 3,
       category: 'pricing',
       question: "Are there any additional costs I should know about?",
-      answer: "All our quoted prices include VAT and standard installation. Additional charges may apply for: heavily corroded calipers requiring extra preparation work (£50-100), custom logo or text application (£75), emergency or same-day service (25% surcharge), or if brake components need replacement during service. We'll always discuss any additional costs before proceeding with work.",
+      answer: "All our quoted prices include VAT and standard service. Additional charges may apply for: heavily corroded calipers requiring extra preparation work (£50-100), custom logo or text application (£75), emergency or same-day service (25% surcharge), or if brake components need attention during inspection. We'll always discuss any additional costs before proceeding with work.",
       popular: false,
       tags: ['additional', 'extra', 'hidden', 'vat']
     },
@@ -59,7 +59,7 @@ const FAQPage = () => {
       id: 4,
       category: 'process',
       question: "How long does the caliper painting process take?",
-      answer: "The complete process typically takes 1-2 working days. Day 1: Removal, cleaning, preparation, and primer application (4-6 hours). Day 2: Color application, curing, and reinstallation (4-6 hours). We allow proper curing time between coats to ensure maximum durability. Rush service is available for an additional 25% charge, completing work in same day.",
+      answer: "The complete process typically takes 1 working day (6-8 hours). This includes vehicle setup on our professional ramp, cleaning, surface preparation, primer application, color application, and curing time. We allow proper curing time between coats to ensure maximum durability. Rush service is available for an additional 25% charge, completing work in same day.",
       popular: true,
       tags: ['time', 'duration', 'process', 'days']
     },
@@ -67,17 +67,17 @@ const FAQPage = () => {
       id: 5,
       category: 'process',
       question: "Do I need to remove the wheels myself?",
-      answer: "No, we handle everything! Our service includes safe vehicle lifting, wheel removal, brake caliper removal, and complete reinstallation. You simply drop off your vehicle and collect it when ready. We use professional lifting equipment and follow manufacturer torque specifications for all components.",
+      answer: "No, we handle everything! Our service includes positioning your vehicle on our professional ramp system and wheel removal for full caliper access. You simply drop off your vehicle and collect it when ready. We use professional equipment and follow manufacturer specifications for all components.",
       popular: true,
       tags: ['wheels', 'removal', 'service', 'included']
     },
     {
       id: 6,
       category: 'process',
-      question: "Will you need to bleed the brake system?",
-      answer: "Yes, we always perform a complete brake system bleed after reinstallation. This ensures there's no air in the system and your brakes work perfectly. We use professional brake bleeding equipment and test the system thoroughly before returning your vehicle. This is included in all our packages.",
+      question: "Do you remove the brake calipers from the vehicle?",
+      answer: "No, we paint your calipers while they remain mounted on your vehicle. We use a professional ramp system for optimal access and only remove the wheels for full caliper exposure. This approach is safer, faster, and maintains the integrity of your brake system while achieving professional results.",
       popular: false,
-      tags: ['brakes', 'bleeding', 'safety', 'system']
+      tags: ['removal', 'mounted', 'ramp', 'system']
     },
     
     // Paint & Durability
@@ -155,7 +155,7 @@ const FAQPage = () => {
       id: 15,
       category: 'booking',
       question: "Do you offer mobile services?",
-      answer: "Currently, we operate from our Manchester workshop to ensure the highest quality results. Our controlled environment allows proper curing and professional finishing. However, we do offer collection and delivery services within 25 miles of Manchester for an additional £50. This ensures your vehicle is handled safely and professionally.",
+      answer: "Currently, we operate from our Manchester workshop to ensure the highest quality results. Our controlled environment and professional ramp system allow proper access and professional finishing. However, we do offer collection and delivery services within 25 miles of Manchester for an additional £50. This ensures your vehicle is handled safely and professionally.",
       popular: false,
       tags: ['mobile', 'collection', 'delivery', 'manchester']
     },

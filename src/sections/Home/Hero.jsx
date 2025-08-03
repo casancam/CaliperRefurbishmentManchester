@@ -64,15 +64,15 @@ const Hero = () => {
               Caliper Painting
             </span>
             <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl mt-1 sm:mt-2">
-              & Installation
+              Services
             </span>
           </h1>
 
           {/* Subtitle - H2 */}
           <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-gray-300 mb-6 sm:mb-8 font-light leading-relaxed px-4 sm:px-0">
             Transform your brake calipers with high-temperature, 
-            <span className="text-white font-medium"> Ferrari red specialist paints</span> and 
-            professional installation services in Manchester
+            <span className="text-white font-medium"> premium quality paints</span> and 
+            professional painting services in Manchester
           </h2>
 
           {/* Key Benefits */}
@@ -83,7 +83,7 @@ const Hero = () => {
             </div>
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-3 py-2 sm:px-4">
               <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-red-400 flex-shrink-0" />
-              <span className="text-white text-xs sm:text-sm font-medium whitespace-nowrap">Professional Installation</span>
+              <span className="text-white text-xs sm:text-sm font-medium whitespace-nowrap">While Mounted Service</span>
             </div>
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-3 py-2 sm:px-4">
               <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-red-400 flex-shrink-0" />
@@ -102,13 +102,13 @@ const Hero = () => {
             </Link>
             
             <div className="flex gap-2 sm:gap-3 w-full sm:w-auto">
-              <a
+              <Link
                 href="tel:+441615492993"
                 className="flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white px-4 py-3 sm:px-6 sm:py-4 rounded-lg font-medium transition-all duration-300 border border-white/20 hover:border-white/40 flex-1 sm:flex-initial"
               >
                 <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
                 <span className="text-sm sm:text-base">Call Now</span>
-              </a>
+              </Link>
               
               <a
                 href="https://api.whatsapp.com/send?phone=441615492993&text=Hi, I'm interested in caliper painting services"

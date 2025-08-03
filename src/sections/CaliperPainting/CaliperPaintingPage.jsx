@@ -10,13 +10,10 @@ import {
   Thermometer,
   Palette,
   Wrench,
-  Star,
-  Play,
   Camera,
   MessageCircle,
   Phone,
   Home,
-  ArrowLeft,
   Droplets,
   Award,
   Zap,
@@ -323,7 +320,7 @@ const CaliperPaintingPage = () => {
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Every caliper painting project follows our meticulous process developed over years 
-              of experience to ensure perfect results every time.
+              of experience to ensure perfect results - all while your calipers remain mounted.
             </p>
           </div>
 
@@ -332,14 +329,14 @@ const CaliperPaintingPage = () => {
             {[
               {
                 step: 1,
-                title: "Removal & Initial Assessment",
-                time: "45-60 minutes",
-                description: "Safe removal of brake calipers using proper techniques and torque specifications. Complete inspection for wear, damage, or maintenance issues that need addressing.",
+                title: "Vehicle Setup & Initial Assessment",
+                time: "30-45 minutes",
+                description: "Your vehicle is positioned on our professional ramp system for optimal access. We assess caliper condition and prepare the work area for painting.",
                 details: [
-                  "Proper vehicle lifting and wheel removal",
-                  "Brake fluid line disconnection and sealing", 
-                  "Caliper bolt removal with correct tools",
-                  "Visual inspection and documentation"
+                  "Professional ramp positioning for access",
+                  "Wheel removal for full caliper exposure", 
+                  "Visual inspection and condition assessment",
+                  "Work area preparation and protection"
                 ],
                 icon: Wrench
               },
@@ -347,25 +344,25 @@ const CaliperPaintingPage = () => {
                 step: 2,
                 title: "Professional Cleaning & Degreasing",
                 time: "30-45 minutes",
-                description: "Industrial-strength cleaning removes all brake dust, road grime, grease, and contaminants. This critical step ensures optimal paint adhesion.",
+                description: "Industrial-strength cleaning removes all brake dust, road grime, grease, and contaminants while calipers remain mounted. This critical step ensures optimal paint adhesion.",
                 details: [
-                  "High-pressure steam cleaning",
+                  "High-pressure cleaning while mounted",
                   "Chemical degreasing treatment",
                   "Brake dust removal from all surfaces",
-                  "Final inspection for cleanliness"
+                  "Surrounding area protection"
                 ],
                 icon: Droplets
               },
               {
                 step: 3,
                 title: "Surface Preparation & Sanding",
-                time: "60-90 minutes",
-                description: "Careful sanding creates the perfect surface texture for paint adhesion while removing any existing coatings or oxidation.",
+                time: "45-60 minutes",
+                description: "Careful sanding creates the perfect surface texture for paint adhesion while removing any existing coatings or oxidation, all performed in-place.",
                 details: [
-                  "Fine-grit sanding of all surfaces",
+                  "Fine-grit sanding of all exposed surfaces",
                   "Removal of existing paint or coatings",
                   "Surface texture optimization",
-                  "Dust removal and final cleaning"
+                  "Precision masking of brake components"
                 ],
                 icon: Zap
               },
@@ -373,11 +370,11 @@ const CaliperPaintingPage = () => {
                 step: 4,
                 title: "High-Temperature Primer Application",
                 time: "45 minutes + cure time",
-                description: "Specialized high-temperature primer is applied to ensure maximum paint adhesion and provide the foundation for a durable finish.",
+                description: "Specialized high-temperature primer is applied using professional techniques to ensure maximum paint adhesion and provide the foundation for a durable finish.",
                 details: [
                   "Heat-resistant primer selection",
-                  "Even spray application technique",
-                  "Multiple thin coats for best coverage",
+                  "Professional spray application",
+                  "Multiple thin coats for coverage",
                   "Proper flash time between coats"
                 ],
                 icon: Shield
@@ -388,8 +385,8 @@ const CaliperPaintingPage = () => {
                 time: "60-90 minutes + cure time",
                 description: "Your chosen color is applied using professional spray equipment and techniques. Multiple thin coats ensure even coverage and deep color saturation.",
                 details: [
-                  "Professional spray booth environment",
-                  "Temperature and humidity control",
+                  "Professional spray application",
+                  "Temperature and humidity monitoring",
                   "Multiple thin coats for durability",
                   "Color matching verification"
                 ],
@@ -397,14 +394,14 @@ const CaliperPaintingPage = () => {
               },
               {
                 step: 6,
-                title: "Curing & Professional Reinstallation",
-                time: "2-4 hours + installation time",
-                description: "Proper heat curing ensures maximum durability. Calipers are then professionally reinstalled with new hardware and proper brake bleeding.",
+                title: "Curing & Final Inspection",
+                time: "2-4 hours",
+                description: "Proper curing ensures maximum durability and hardness. Final quality inspection and cleanup complete the process before wheel reinstallation.",
                 details: [
-                  "Controlled heat curing process",
+                  "Controlled curing process",
                   "Quality control inspection",
-                  "Professional reinstallation",
-                  "Brake system bleeding and testing"
+                  "Professional cleanup and detailing",
+                  "Wheel reinstallation and final checks"
                 ],
                 icon: Clock
               }
@@ -459,15 +456,15 @@ const CaliperPaintingPage = () => {
             {[
               {
                 question: "How long does the caliper painting process take?",
-                answer: "The complete process typically takes 1-2 days, depending on the package selected and current workload. This includes removal, preparation, painting, curing, and reinstallation."
+                answer: "The complete process typically takes 1 day, depending on the package selected and current workload. This includes preparation, painting, curing, and final inspection while your calipers remain mounted."
               },
               {
                 question: "Will the paint withstand the heat from braking?",
                 answer: "Absolutely. We use specialized high-temperature paints rated for 1200°F, which is well above the temperatures generated during normal and even aggressive braking."
               },
               {
-                question: "Do you need to remove the entire brake system?",
-                answer: "We only remove the brake calipers themselves. The brake discs, pads, and most of the brake lines remain in place. We use proper bleeding techniques during reinstallation."
+                question: "Do you remove the brake calipers from the vehicle?",
+                answer: "No, we paint your calipers while they remain mounted on your vehicle. We use a professional ramp system for optimal access and only remove the wheels for full exposure of the calipers."
               },
               {
                 question: "What's included in the warranty?",
