@@ -114,7 +114,7 @@ const Hero = () => {
                 href="https://api.whatsapp.com/send?phone=441615492993&text=Hi, I'm interested in caliper painting services"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white px-4 py-3 sm:px-6 sm:py-4 rounded-lg font-medium transition-all duration-300 shadow-md hover:shadow-lg flex-1 sm:flex-initial"
+                className="flex items-center justify-center gap-2 bg-green-700 hover:bg-green-800 text-white px-4 py-3 sm:px-6 sm:py-4 rounded-lg font-semibold transition-all duration-300 shadow-md hover:shadow-lg flex-1 sm:flex-initial"
               >
                 <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5" />
                 <span className="text-sm sm:text-base">WhatsApp</span>

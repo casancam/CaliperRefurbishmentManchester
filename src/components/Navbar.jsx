@@ -78,12 +78,12 @@ const Navbar = () => {
                 href="https://api.whatsapp.com/send?phone=441615492993&text=Hi, I'm interested in caliper painting services"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-start gap-2 w-32 h-10 px-3 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-all duration-200 shadow-md hover:shadow-lg group"
+                className="flex items-center justify-start gap-2 w-32 h-10 px-3 bg-green-700 hover:bg-green-800 text-white rounded-lg transition-all duration-200 shadow-md hover:shadow-lg group"
               >
                 <div className="flex items-center justify-center w-5 h-5 flex-shrink-0">
                   <FaWhatsapp className="text-white text-base group-hover:scale-110 transition-transform" />
                 </div>
-                <span className="text-sm font-medium whitespace-nowrap">
+                <span className="text-sm font-semibold whitespace-nowrap">
                   WhatsApp
                 </span>
               </a>
@@ -161,11 +161,11 @@ const Navbar = () => {
                 href="https://api.whatsapp.com/send?phone=441615492993&text=Hi, I'm interested in caliper painting services"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-col items-center gap-1 px-3 py-3 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-all duration-200 text-center"
+                className="flex flex-col items-center gap-1 px-3 py-3 bg-green-700 hover:bg-green-800 text-white rounded-lg transition-all duration-200 text-center"
                 onClick={() => setIsOpen(false)}
               >
                 <FaWhatsapp className="text-xl" />
-                <span className="text-xs font-medium">WhatsApp</span>
+                <span className="text-xs font-semibold">WhatsApp</span>
               </a>
 
               <a

@@ -8,13 +8,7 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 import { MdEmail, MdCall, MdAccessTime } from "react-icons/md";
-import { GoogleMapsEmbed } from "@next/third-parties/google";
 import Link from "next/link";
-
-const center = {
-    lat: 53.50299072265625,
-    lng: -2.2895514965057373,
-  };
 
 const Footer = () => {
   return (
@@ -165,15 +159,16 @@ const Footer = () => {
               </h3>
 
               <div className="rounded-xl overflow-hidden shadow-lg shadow-red-900/20 border border-slate-800">
-                <GoogleMapsEmbed
-                  apiKey="AIzaSyA_Y5ZLrUV5xh6j5rox6xJS3qG3opdIcLI"
-                  height={250}
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA_Y5ZLrUV5xh6j5rox6xJS3qG3opdIcLI&q=Langley+Road+298+South,Salford,UK&zoom=15&center=53.50299072265625,-2.2895514965057373"
                   width="100%"
-                  mode="place"
-                  zoom="15"
-                  center={`${center.lat},${center.lng}`}
-                  q="Langley+Road+298+South,Salford,UK"
-                />
+                  height="250"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Caliper Refurbishment Manchester Workshop Location"
+                ></iframe>
               </div>
 
               <div className="bg-gradient-to-r from-red-900/30 to-red-800/30 p-4 rounded-xl">
