@@ -2,11 +2,12 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { 
-  ArrowRight, 
-  CheckCircle, 
-  Clock, 
-  Shield, 
+import Image from 'next/image';
+import {
+  ArrowRight,
+  CheckCircle,
+  Clock,
+  Shield,
   Thermometer,
   Palette,
   Wrench,
@@ -65,13 +66,20 @@ const CaliperPaintingPage = () => {
         {backgroundImages.map((image, index) => (
           <div
             key={index}
-            className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${
+            className={`absolute inset-0 transition-opacity duration-1000 ${
               index === currentImageIndex ? 'opacity-100' : 'opacity-0'
             }`}
-            style={{
-              backgroundImage: `url('${image}')`
-            }}
           >
+            <Image
+              src={image}
+              alt={`Caliper painting service ${index + 1}`}
+              fill
+              priority={index === 0}
+              loading={index === 0 ? 'eager' : 'lazy'}
+              quality={75}
+              sizes="100vw"
+              className="object-cover object-center"
+            />
             <div className="absolute inset-0 bg-black/60"></div>
           </div>
         ))}
@@ -183,11 +191,12 @@ const CaliperPaintingPage = () => {
 
             <div className="relative">
               <div className="bg-gray-900 rounded-xl overflow-hidden shadow-2xl">
-                <video 
-                  controls 
+                <video
+                  controls
                   poster="/assets/caliper1.jpg"
                   className="w-full h-auto"
-                  preload="metadata"
+                  preload="none"
+                  loading="lazy"
                 >
                   <source src="/videos/video1.mp4" type="video/mp4" />
                   Your browser does not support the video tag.

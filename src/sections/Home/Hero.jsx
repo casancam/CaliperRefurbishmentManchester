@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Phone, MessageCircle, Star, CheckCircle } from 'lucide-react';
 
 const Hero = () => {
@@ -36,13 +37,20 @@ const Hero = () => {
       {backgroundImages.map((image, index) => (
         <div
           key={index}
-          className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${
+          className={`absolute inset-0 transition-opacity duration-1000 ${
             index === currentImageIndex ? 'opacity-100' : 'opacity-0'
           }`}
-          style={{
-            backgroundImage: `url('${image}')`
-          }}
         >
+          <Image
+            src={image}
+            alt={`Caliper painting showcase ${index + 1}`}
+            fill
+            priority={index === 0}
+            loading={index === 0 ? 'eager' : 'lazy'}
+            quality={75}
+            sizes="100vw"
+            className="object-cover object-center"
+          />
           {/* Black Overlay */}
           <div className="absolute inset-0 bg-black/70"></div>
         </div>

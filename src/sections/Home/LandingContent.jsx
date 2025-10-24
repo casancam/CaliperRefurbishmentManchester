@@ -157,11 +157,12 @@ const LandingContent = () => {
 
             <div className="relative">
               <div className="relative bg-gray-900 rounded-xl overflow-hidden shadow-2xl">
-                <video 
-                  controls 
+                <video
+                  controls
                   poster="/assets/caliper1.jpg"
                   className="w-full h-auto"
-                  preload="metadata"
+                  preload="none"
+                  loading="lazy"
                 >
                   <source src="/videos/video1.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
