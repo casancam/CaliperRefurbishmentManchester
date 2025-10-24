@@ -139,18 +139,25 @@ const Hero = () => {
           </div>
 
           {/* Image Indicators */}
-          <div className="flex justify-center gap-2 mt-4">
+          <div className="flex justify-center gap-3 mt-4">
             {backgroundImages.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentImageIndex(index)}
-                className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                  index === currentImageIndex 
-                    ? 'bg-red-500 w-6' 
-                    : 'bg-white/30 hover:bg-white/50'
+                className={`rounded-full transition-all duration-300 min-w-[44px] min-h-[44px] flex items-center justify-center ${
+                  index === currentImageIndex
+                    ? 'bg-red-500/20'
+                    : 'bg-white/10 hover:bg-white/20'
                 }`}
                 aria-label={`Go to image ${index + 1}`}
-              />
+                aria-current={index === currentImageIndex ? 'true' : 'false'}
+              >
+                <span className={`block rounded-full transition-all duration-300 ${
+                  index === currentImageIndex
+                    ? 'bg-red-500 w-6 h-3'
+                    : 'bg-white/50 w-3 h-3'
+                }`} />
+              </button>
             ))}
           </div>
         </div>

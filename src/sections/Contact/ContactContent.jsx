@@ -577,7 +577,7 @@ const ContactContent = () => {
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
               Why Choose Us?
             </h2>
-            <p className="text-xl text-red-100 max-w-3xl mx-auto">
+            <p className="text-xl text-white max-w-3xl mx-auto">
               Join hundreds of satisfied customers who trust us with their vehicles
             </p>
           </div>
@@ -585,15 +585,15 @@ const ContactContent = () => {
           <div className="grid grid-cols-3 gap-8 text-center">
             <div>
               <div className="text-3xl md:text-4xl font-bold text-white mb-2">500+</div>
-              <div className="text-red-100">Calipers Painted</div>
+              <div className="text-white">Calipers Painted</div>
             </div>
             <div>
               <div className="text-3xl md:text-4xl font-bold text-white mb-2">5★</div>
-              <div className="text-red-100">Average Rating</div>
+              <div className="text-white">Average Rating</div>
             </div>
             <div>
               <div className="text-3xl md:text-4xl font-bold text-white mb-2">24hr</div>
-              <div className="text-red-100">Response Time</div>
+              <div className="text-white">Response Time</div>
             </div>
           </div>
         </div>

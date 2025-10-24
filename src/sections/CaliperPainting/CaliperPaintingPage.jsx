@@ -503,8 +503,8 @@ const CaliperPaintingPage = () => {
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
             Ready to Transform Your Calipers?
           </h2>
-          <p className="text-xl text-red-100 mb-8 max-w-3xl mx-auto">
-            Book your caliper painting service today and give your vehicle the professional 
+          <p className="text-xl text-white mb-8 max-w-3xl mx-auto">
+            Book your caliper painting service today and give your vehicle the professional
             finish it deserves. Free consultation and quote available.
           </p>
           
@@ -526,16 +526,16 @@ const CaliperPaintingPage = () => {
             </a>
           </div>
 
-          <div className="flex justify-center gap-6 text-red-100">
-            <Link href="/gallery" className="hover:text-white transition-colors">
+          <div className="flex justify-center gap-6 text-white">
+            <Link href="/gallery" className="hover:text-gray-200 transition-colors">
               View Gallery
             </Link>
             <span>•</span>
-            <Link href="/" className="hover:text-white transition-colors">
+            <Link href="/" className="hover:text-gray-200 transition-colors">
               All Services
             </Link>
             <span>•</span>
-            <Link href="/faq" className="hover:text-white transition-colors">
+            <Link href="/faq" className="hover:text-gray-200 transition-colors">
               FAQs
             </Link>
           </div>

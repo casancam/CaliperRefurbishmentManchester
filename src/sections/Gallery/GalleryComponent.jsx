@@ -368,8 +368,8 @@ const GalleryComponent = () => {
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
             Ready for Your Caliper Transformation?
           </h2>
-          <p className="text-xl text-red-100 mb-8 max-w-3xl mx-auto">
-            Join hundreds of satisfied customers who've transformed their vehicles 
+          <p className="text-xl text-white mb-8 max-w-3xl mx-auto">
+            Join hundreds of satisfied customers who've transformed their vehicles
             with our professional caliper painting service.
           </p>
           
@@ -391,16 +391,16 @@ const GalleryComponent = () => {
             </Link>
           </div>
 
-          <div className="flex justify-center gap-6 text-red-100">
-            <Link href="/" className="hover:text-white transition-colors">
+          <div className="flex justify-center gap-6 text-white">
+            <Link href="/" className="hover:text-gray-200 transition-colors">
               Home
             </Link>
             <span>•</span>
-            <Link href="/faq" className="hover:text-white transition-colors">
+            <Link href="/faq" className="hover:text-gray-200 transition-colors">
               FAQs
             </Link>
             <span>•</span>
-            <a href="tel:+441615492993" className="hover:text-white transition-colors">
+            <a href="tel:+441615492993" className="hover:text-gray-200 transition-colors">
             0161 549 2993
             </a>
           </div>

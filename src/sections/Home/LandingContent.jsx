@@ -357,8 +357,8 @@ const LandingContent = () => {
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
             Ready to Transform Your Calipers?
           </h2>
-          <p className="text-xl text-red-100 mb-8 max-w-3xl mx-auto">
-            Get in touch with our team for a free quote and consultation. 
+          <p className="text-xl text-white mb-8 max-w-3xl mx-auto">
+            Get in touch with our team for a free quote and consultation.
             We'll discuss your requirements and provide expert recommendations.
           </p>
           

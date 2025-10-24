@@ -544,8 +544,8 @@ const FAQPage = () => {
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
             Still Have Questions?
           </h2>
-          <p className="text-xl text-red-100 mb-8 max-w-3xl mx-auto">
-            Our experts are here to help! Get in touch for personalized advice 
+          <p className="text-xl text-white mb-8 max-w-3xl mx-auto">
+            Our experts are here to help! Get in touch for personalized advice
             and a free consultation about your caliper painting needs.
           </p>
           
@@ -567,16 +567,16 @@ const FAQPage = () => {
             </Link>
           </div>
 
-          <div className="flex justify-center gap-6 text-red-100">
-            <Link href="/" className="hover:text-white transition-colors">
+          <div className="flex justify-center gap-6 text-white">
+            <Link href="/" className="hover:text-gray-200 transition-colors">
               Home
             </Link>
             <span>•</span>
-            <Link href="/gallery" className="hover:text-white transition-colors">
+            <Link href="/gallery" className="hover:text-gray-200 transition-colors">
               Gallery
             </Link>
             <span>•</span>
-            <a href="tel:+4401615492993" className="hover:text-white transition-colors">
+            <a href="tel:+4401615492993" className="hover:text-gray-200 transition-colors">
             0161 549 2993
             </a>
           </div>
