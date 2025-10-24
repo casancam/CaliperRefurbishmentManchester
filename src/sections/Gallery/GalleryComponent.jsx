@@ -414,14 +414,16 @@ const GalleryComponent = () => {
             {/* Navigation Buttons */}
             <button
               onClick={() => navigateLightbox('prev')}
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 bg-white bg-opacity-20 hover:bg-opacity-40 text-white p-3 rounded-full transition-all duration-300"
+              aria-label="Previous image"
+              className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 bg-white bg-opacity-20 hover:bg-opacity-40 text-white p-4 rounded-full transition-all duration-300 min-w-[44px] min-h-[44px] flex items-center justify-center"
             >
               <ArrowLeft className="w-6 h-6" />
             </button>
-            
+
             <button
               onClick={() => navigateLightbox('next')}
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 bg-white bg-opacity-20 hover:bg-opacity-40 text-white p-3 rounded-full transition-all duration-300"
+              aria-label="Next image"
+              className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 bg-white bg-opacity-20 hover:bg-opacity-40 text-white p-4 rounded-full transition-all duration-300 min-w-[44px] min-h-[44px] flex items-center justify-center"
             >
               <ArrowRight className="w-6 h-6" />
             </button>
@@ -429,7 +431,8 @@ const GalleryComponent = () => {
             {/* Close Button */}
             <button
               onClick={closeLightbox}
-              className="absolute top-4 right-4 z-10 bg-white bg-opacity-20 hover:bg-opacity-40 text-white p-2 rounded-full transition-all duration-300"
+              aria-label="Close lightbox"
+              className="absolute top-4 right-4 z-10 bg-white bg-opacity-20 hover:bg-opacity-40 text-white p-4 rounded-full transition-all duration-300 min-w-[44px] min-h-[44px] flex items-center justify-center"
             >
               <X className="w-6 h-6" />
             </button>

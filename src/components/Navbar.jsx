@@ -132,6 +132,8 @@ const Navbar = () => {
             {/* Mobile menu button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
+              aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+              aria-expanded={isOpen}
               className="lg:hidden ml-4 w-10 h-10 flex items-center justify-center rounded-lg bg-slate-800 text-gray-300 hover:text-white hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-red-500 transition-colors"
             >
               {isOpen ? <X size={20} /> : <Menu size={20} />}

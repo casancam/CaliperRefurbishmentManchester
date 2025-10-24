@@ -123,7 +123,7 @@ const LandingContent = () => {
                     <CheckCircle className="w-4 h-4 text-red-600" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900">Precision Preparation</h4>
+                    <h3 className="font-semibold text-gray-900">Precision Preparation</h3>
                     <p className="text-gray-600">Thorough cleaning and surface preparation for optimal paint adhesion</p>
                   </div>
                 </div>
@@ -132,7 +132,7 @@ const LandingContent = () => {
                     <CheckCircle className="w-4 h-4 text-red-600" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900">Premium Materials</h4>
+                    <h3 className="font-semibold text-gray-900">Premium Materials</h3>
                     <p className="text-gray-600">High-temperature resistant paints designed for brake system environments</p>
                   </div>
                 </div>
@@ -141,7 +141,7 @@ const LandingContent = () => {
                     <CheckCircle className="w-4 h-4 text-red-600" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900">Expert Application</h4>
+                    <h3 className="font-semibold text-gray-900">Expert Application</h3>
                     <p className="text-gray-600">Professional spray techniques for even coverage and smooth finish</p>
                   </div>
                 </div>
@@ -218,7 +218,7 @@ const LandingContent = () => {
               <div className="lg:w-1/2">
                 <div className="bg-white p-6 rounded-xl shadow-lg">
                   <Clock className="w-8 h-8 text-red-600 mb-3" />
-                  <h4 className="font-semibold text-gray-900 mb-2">Time Required: 30-45 minutes</h4>
+                  <p className="font-semibold text-gray-900 mb-2">Time Required: 30-45 minutes</p>
                   <p className="text-gray-600">Professional assessment and work area preparation</p>
                 </div>
               </div>
@@ -241,7 +241,7 @@ const LandingContent = () => {
               <div className="lg:w-1/2">
                 <div className="bg-white p-6 rounded-xl shadow-lg">
                   <Droplets className="w-8 h-8 text-red-600 mb-3" />
-                  <h4 className="font-semibold text-gray-900 mb-2">Professional Cleaning</h4>
+                  <p className="font-semibold text-gray-900 mb-2">Professional Cleaning</p>
                   <p className="text-gray-600">Industrial-grade degreasing and surface preparation</p>
                 </div>
               </div>
@@ -264,7 +264,7 @@ const LandingContent = () => {
               <div className="lg:w-1/2">
                 <div className="bg-white p-6 rounded-xl shadow-lg">
                   <Shield className="w-8 h-8 text-red-600 mb-3" />
-                  <h4 className="font-semibold text-gray-900 mb-2">Heat-Resistant Primer</h4>
+                  <p className="font-semibold text-gray-900 mb-2">Heat-Resistant Primer</p>
                   <p className="text-gray-600">Specialized primer for extreme temperature resistance</p>
                 </div>
               </div>
@@ -287,7 +287,7 @@ const LandingContent = () => {
               <div className="lg:w-1/2">
                 <div className="bg-white p-6 rounded-xl shadow-lg">
                   <Palette className="w-8 h-8 text-red-600 mb-3" />
-                  <h4 className="font-semibold text-gray-900 mb-2">Premium Paint System</h4>
+                  <p className="font-semibold text-gray-900 mb-2">Premium Paint System</p>
                   <p className="text-gray-600">Ferrari red and custom color options available</p>
                 </div>
               </div>
@@ -310,7 +310,7 @@ const LandingContent = () => {
               <div className="lg:w-1/2">
                 <div className="bg-white p-6 rounded-xl shadow-lg">
                   <Thermometer className="w-8 h-8 text-red-600 mb-3" />
-                  <h4 className="font-semibold text-gray-900 mb-2">Heat Curing Process</h4>
+                  <p className="font-semibold text-gray-900 mb-2">Heat Curing Process</p>
                   <p className="text-gray-600">Controlled curing for maximum durability</p>
                 </div>
               </div>
@@ -333,7 +333,7 @@ const LandingContent = () => {
               <div className="lg:w-1/2">
                 <div className="bg-white p-6 rounded-xl shadow-lg">
                   <Eye className="w-8 h-8 text-red-600 mb-3" />
-                  <h4 className="font-semibold text-gray-900 mb-2">Quality Assurance</h4>
+                  <p className="font-semibold text-gray-900 mb-2">Quality Assurance</p>
                   <p className="text-gray-600">Final inspection and professional cleanup</p>
                 </div>
               </div>

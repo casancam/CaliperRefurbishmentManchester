@@ -368,7 +368,7 @@ const ContactContent = () => {
                       <Phone className="w-6 h-6 text-red-600" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900 mb-1">Call Us</h4>
+                      <p className="font-semibold text-gray-900 mb-1">Call Us</p>
                       <a
                         href="tel:+441615492993"
                         className="text-gray-600 hover:text-red-600 transition-colors"
@@ -386,7 +386,7 @@ const ContactContent = () => {
                       <Mail className="w-6 h-6 text-red-600" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900 mb-1">Email Us</h4>
+                      <p className="font-semibold text-gray-900 mb-1">Email Us</p>
                       <a
                         href="mailto:info@caliperrefurbmanchester.co.uk"
                         className="text-gray-600 hover:text-red-600 transition-colors text-sm break-all"
@@ -404,7 +404,7 @@ const ContactContent = () => {
                       <MapPin className="w-6 h-6 text-red-600" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900 mb-1">Visit Our Workshop</h4>
+                      <p className="font-semibold text-gray-900 mb-1">Visit Our Workshop</p>
                       <p className="text-gray-600">
                         Langley Road 298 South<br />
                         Salford, Manchester<br />
@@ -421,7 +421,7 @@ const ContactContent = () => {
                       <MessageSquare className="w-6 h-6 text-red-600" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900 mb-1">WhatsApp</h4>
+                      <p className="font-semibold text-gray-900 mb-1">WhatsApp</p>
                       <a
                         href="https://api.whatsapp.com/send?phone=441615492993&text=Hi, I'm interested in caliper painting services"
                         target="_blank"
