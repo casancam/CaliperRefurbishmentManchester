@@ -76,8 +76,8 @@ const CaliperPaintingPage = () => {
               fill
               priority={index === 0}
               loading={index === 0 ? 'eager' : 'lazy'}
-              quality={75}
-              sizes="100vw"
+              quality={index === 0 ? 60 : 50}
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 100vw"
               className="object-cover object-center"
             />
             <div className="absolute inset-0 bg-black/60"></div>
@@ -190,17 +190,28 @@ const CaliperPaintingPage = () => {
             </div>
 
             <div className="relative">
-              <div className="bg-gray-900 rounded-xl overflow-hidden shadow-2xl">
+              <div className="relative bg-gray-900 rounded-xl overflow-hidden shadow-2xl aspect-video">
                 <video
                   controls
-                  poster="/assets/caliper1.jpg"
-                  className="w-full h-auto"
+                  className="w-full h-auto relative z-10"
                   preload="none"
                   loading="lazy"
                 >
                   <source src="/videos/video1.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
+
+                {/* Optimized Poster Image */}
+                <div className="absolute inset-0 z-0">
+                  <Image
+                    src="/assets/caliper1.jpg"
+                    alt="Caliper painting application process"
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    quality={60}
+                    className="object-cover"
+                  />
+                </div>
               </div>
               <p className="text-center text-gray-600 mt-4 text-sm">
                 Watch our expert application process in action

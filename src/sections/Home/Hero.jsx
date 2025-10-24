@@ -47,8 +47,8 @@ const Hero = () => {
             fill
             priority={index === 0}
             loading={index === 0 ? 'eager' : 'lazy'}
-            quality={75}
-            sizes="100vw"
+            quality={index === 0 ? 60 : 50}
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 100vw"
             className="object-cover object-center"
           />
           {/* Black Overlay */}

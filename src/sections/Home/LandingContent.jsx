@@ -1,11 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
-import { 
-  ArrowRight, 
-  Palette, 
-  Camera, 
-  HelpCircle, 
-  MessageSquare, 
+import Image from 'next/image';
+import {
+  ArrowRight,
+  Palette,
+  Camera,
+  HelpCircle,
+  MessageSquare,
   Play,
   CheckCircle,
   Clock,
@@ -156,26 +157,27 @@ const LandingContent = () => {
             </div>
 
             <div className="relative">
-              <div className="relative bg-gray-900 rounded-xl overflow-hidden shadow-2xl">
+              <div className="relative bg-gray-900 rounded-xl overflow-hidden shadow-2xl aspect-video">
                 <video
                   controls
-                  poster="/assets/caliper1.jpg"
-                  className="w-full h-auto"
+                  className="w-full h-auto relative z-10"
                   preload="none"
                   loading="lazy"
                 >
                   <source src="/videos/video1.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
-                
-                {/* Video Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent pointer-events-none"></div>
-                
-                {/* Play Button Overlay (for styling) */}
-                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                  <div className="w-16 h-16 bg-red-600/90 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <Play className="w-6 h-6 text-white ml-1" />
-                  </div>
+
+                {/* Optimized Poster Image */}
+                <div className="absolute inset-0 z-0">
+                  <Image
+                    src="/assets/caliper1.jpg"
+                    alt="Caliper painting process preview"
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    quality={60}
+                    className="object-cover"
+                  />
                 </div>
               </div>
               
