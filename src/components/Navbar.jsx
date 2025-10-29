@@ -17,6 +17,7 @@ const Navbar = () => {
     { name: "Home", href: "/" },
     { name: "Caliper Painting", href: "/caliper-painting" },
     { name: "Gallery", href: "/gallery" },
+    { name: "Blog", href: "/blog" },
     { name: "FAQ", href: "/faq" },
   ];
 
