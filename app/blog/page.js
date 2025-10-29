@@ -90,7 +90,7 @@ export default async function BlogPage() {
 
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
             Discover expert tips, guides, and insights on brake caliper
-            painting, maintenance, and automotive care from Manchester's leading
+            painting, maintenance, and automotive care from Manchester&apos;s leading
             specialists.
           </p>
 
@@ -197,7 +197,7 @@ export default async function BlogPage() {
                   No Blog Posts Yet
                 </h2>
                 <p className="text-gray-600 mb-6">
-                  We're working on creating amazing content for you. Check back
+                  We&apos;re working on creating amazing content for you. Check back
                   soon!
                 </p>
                 <Link
