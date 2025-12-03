@@ -103,3 +103,38 @@ targetProjects[]._ref] {
 
   return client.fetch(query);
 }
+
+// Helper function to fetch all gallery images
+export async function getAllGalleryImages() {
+  const query = `*[_type == "gallery" &&
+    "e628db7e-f70b-476f-8669-7fd8ea4d80ad" in targetProjects[]._ref
+  ] | order(publishedAt desc) {
+    images[] {
+      asset-> {
+        _id,
+        url
+      },
+      alt,
+      caption
+    }
+  }`;
+
+  const galleries = await client.fetch(query);
+
+  // Flatten all images from all galleries into a single array
+  const allImages = galleries.flatMap(gallery =>
+    gallery.images.map(image => {
+      const imageUrl = image.asset
+        ? urlFor(image.asset).width(1200).height(800).url()
+        : null;
+
+      return {
+        src: imageUrl,
+        alt: image.alt || "Window tinting project",
+        caption: image.caption,
+      };
+    })
+  );
+
+  return allImages;
+}

@@ -18,19 +18,29 @@ import {
   MessageCircle,
 } from 'lucide-react';
 
-const GalleryComponent = () => {
+const GalleryComponent = ({ images }) => {
   const [selectedMedia, setSelectedMedia] = useState(null);
   const [filter, setFilter] = useState('all');
   const [layoutView, setLayoutView] = useState('grid');
 
-  // Gallery data
-  const galleryItems = [
+  // Hardcoded video (always included)
+  const hardcodedVideo = {
+    id: 'video-1',
+    type: 'video',
+    src: '/videos/video1.mp4',
+    poster: '/assets/caliper4.jpg',
+    caption: 'Professional Painting Process',
+    category: 'process',
+    featured: true
+  };
+
+  // Hardcoded fallback images (only used if no Sanity images)
+  const fallbackImages = [
     {
       id: 1,
       type: 'image',
       src: '/assets/caliper2.jpg',
-      title: 'Ferrari Red Transformation',
-      description: 'BMW M3 brake calipers painted in signature Ferrari red',
+      caption: 'Ferrari Red Transformation',
       category: 'ferrari-red',
       featured: true
     },
@@ -38,8 +48,7 @@ const GalleryComponent = () => {
       id: 2,
       type: 'image',
       src: '/assets/caliper1.jpg',
-      title: 'Performance Yellow Finish',
-      description: 'Audi RS6 calipers with custom performance blue coating',
+      caption: 'Performance Yellow Finish',
       category: 'yellow',
       featured: false
     },
@@ -47,27 +56,15 @@ const GalleryComponent = () => {
       id: 3,
       type: 'image',
       src: '/assets/caliper3.jpg',
-      title: 'Brembo Yellow Classic',
-      description: 'Porsche 911 calipers in authentic Brembo yellow',
+      caption: 'Brembo Yellow Classic',
       category: 'ferrari-red',
-      featured: true
-    },
-    {
-      id: 4,
-      type: 'video',
-      src: '/videos/video1.mp4',
-      poster: '/assets/caliper4.jpg',
-      title: 'Professional Painting Process',
-      description: 'Watch our expert technique in action',
-      category: 'process',
       featured: true
     },
     {
       id: 5,
       type: 'image',
       src: '/assets/caliper5.jpg',
-      title: 'Professional paint protection',
-      description: 'Mercedes AMG calipers with paint protection',
+      caption: 'Professional paint protection',
       category: 'process',
       featured: false
     },
@@ -75,12 +72,27 @@ const GalleryComponent = () => {
       id: 6,
       type: 'image',
       src: '/assets/caliper6.jpg',
-      title: 'Racing Green Heritage',
-      description: 'Jaguar F-Type calipers in classic ferrari red',
+      caption: 'Racing Green Heritage',
       category: 'ferrari-red',
       featured: false
     }
   ];
+
+  // Transform Sanity images to match component format
+  const sanityGalleryItems = images?.length > 0
+    ? images.map((img, index) => ({
+        id: `sanity-${index + 1}`,
+        type: 'image',
+        src: img.src,
+        caption: img.caption || img.alt || 'Caliper painting project',
+        category: 'all',
+        featured: false
+      }))
+    : [];
+
+  // Combine hardcoded video with either Sanity images or fallback images
+  const imageItems = sanityGalleryItems.length > 0 ? sanityGalleryItems : fallbackImages;
+  const galleryItems = [hardcodedVideo, ...imageItems];
 
   const categories = [
     { id: 'all', name: 'All Work', count: galleryItems.length },
@@ -277,7 +289,7 @@ const GalleryComponent = () => {
                     <div className="relative aspect-video">
                       <img
                         src={item.poster}
-                        alt={item.title}
+                        alt={item.caption || 'Gallery video'}
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       />
                       <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
@@ -295,7 +307,7 @@ const GalleryComponent = () => {
                     <div className="relative aspect-square md:aspect-video">
                       <img
                         src={item.src}
-                        alt={item.title}
+                        alt={item.caption || 'Gallery image'}
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -308,34 +320,13 @@ const GalleryComponent = () => {
                   )}
                 </div>
 
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-red-600 transition-colors duration-300">
-                    {item.title}
-                  </h3>
-                  <p className="text-gray-600 text-sm mb-4">
-                    {item.description}
-                  </p>
-                  
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-2">
-                      <div className={`w-3 h-3 rounded-full ${
-                        item.category === 'ferrari-red' ? 'bg-red-600' :
-                        item.category === 'blue' ? 'bg-blue-600' :
-                        item.category === 'yellow' ? 'bg-yellow-400' :
-                        item.category === 'black' ? 'bg-gray-800' :
-                        item.category === 'green' ? 'bg-green-600' :
-                        'bg-gray-400'
-                      }`}></div>
-                      <span className="text-xs text-gray-500 capitalize">
-                        {item.category.replace('-', ' ')}
-                      </span>
-                    </div>
-                    
-                    <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <Eye className="w-4 h-4 text-gray-400" />
-                    </div>
+                {item.caption && (
+                  <div className="p-6">
+                    <p className="text-gray-700 text-sm text-center">
+                      {item.caption}
+                    </p>
                   </div>
-                </div>
+                )}
               </div>
             ))}
           </div>
@@ -453,40 +444,25 @@ const GalleryComponent = () => {
               ) : (
                 <img
                   src={selectedMedia.src}
-                  alt={selectedMedia.title}
+                  alt={selectedMedia.caption || 'Gallery image'}
                   className="w-full max-h-[70vh] object-contain"
                 />
               )}
               
               {/* Media Info */}
-              <div className="p-6">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                  {selectedMedia.title}
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  {selectedMedia.description}
-                </p>
-                
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2">
-                    <div className={`w-4 h-4 rounded-full ${
-                      selectedMedia.category === 'ferrari-red' ? 'bg-red-600' :
-                      selectedMedia.category === 'blue' ? 'bg-blue-600' :
-                      selectedMedia.category === 'yellow' ? 'bg-yellow-400' :
-                      selectedMedia.category === 'black' ? 'bg-gray-800' :
-                      selectedMedia.category === 'green' ? 'bg-green-600' :
-                      'bg-gray-400'
-                    }`}></div>
-                    <span className="text-sm text-gray-500 capitalize">
-                      {selectedMedia.category.replace('-', ' ')}
-                    </span>
-                  </div>
-                  
-                  <div className="text-sm text-gray-500">
-                    {filteredItems.findIndex(item => item.id === selectedMedia.id) + 1} of {filteredItems.length}
+              {selectedMedia.caption && (
+                <div className="p-6">
+                  <p className="text-gray-700 text-center mb-4">
+                    {selectedMedia.caption}
+                  </p>
+
+                  <div className="flex items-center justify-center">
+                    <div className="text-sm text-gray-500">
+                      {filteredItems.findIndex(item => item.id === selectedMedia.id) + 1} of {filteredItems.length}
+                    </div>
                   </div>
                 </div>
-              </div>
+              )}
             </div>
           </div>
         </div>
